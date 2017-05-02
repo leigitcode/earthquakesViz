@@ -11,7 +11,7 @@ vignette: >
 
 
 ## Aim of the Package
-The NOAA Significant Earthquake Database^1^ contains data on destructive earthquakes from 2150 B.C. to the present.  The database is available [here](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This package provides functions to analyze and visualize the NOAA earthquake data.  Two visualizations can be generated – a timeline for earthquakes and a map of earthquake epicenters.  
+The NOAA Significant Earthquake Database[1] contains data on destructive earthquakes from 2150 B.C. to the present.  The database is available [here](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This package provides functions to analyze and visualize the NOAA earthquake data.  Two visualizations can be generated – a timeline for earthquakes and a map of earthquake epicenters.  
 
 ## Accessing the Package
 
@@ -93,7 +93,7 @@ eq_time(y="COUNTRY",color="DEATHS",alpha=0.5,timeline_label=TRUE)
 
 ## Example - Interactive Map Visualization
 
-After the Read and Clean Data step, the NOAA earthquake data can be displayed in an interactive map visualization.  The earthquake data is mapped using the latitude and longitude of the earthquake epicenter.  The leaflet^2^ package is used to create an interactive map.  Clicking on an epicenter circle will open a popup with information about the earthquake.  The information in the popup can be customized in two ways.  First, a data column name like DATE can be specified.  Second, the value of "popup_text" can be specified which will automatically generate popup text with the values for Location, Magnitude, and Deaths.
+After the Read and Clean Data step, the NOAA earthquake data can be displayed in an interactive map visualization.  The earthquake data is mapped using the latitude and longitude of the earthquake epicenter.  The leaflet[2] package is used to create an interactive map.  Clicking on an epicenter circle will open a popup with information about the earthquake.  The information in the popup can be customized in two ways.  First, a data column name like DATE can be specified.  Second, the value of "popup_text" can be specified which will automatically generate popup text with the values for Location, Magnitude, and Deaths.
 
 It is best to subset the data so that the visualization will provide meaningful information.  One country or several countries can be displayed for a particular time period.
 
