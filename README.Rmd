@@ -12,6 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis-CI Build Status](https://travis-ci.org/leigitcode/earthquakesViz.svg?branch=master)](https://travis-ci.org/leigitcode/earthquakesViz)
 
 ## Aim of the Package
 The NOAA Significant Earthquake Database^1^ contains data on destructive earthquakes from 2150 B.C. to the present.  The database is available [here](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This package provides functions to analyze and visualize the NOAA earthquake data.  Two visualizations can be generated – a timeline for earthquakes and a map of earthquake epicenters.  

@@ -1,5 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis-CI Build Status](https://travis-ci.org/leigitcode/earthquakesViz.svg?branch=master)](https://travis-ci.org/leigitcode/earthquakesViz)
+
 Aim of the Package
 ------------------
 
@@ -175,7 +177,7 @@ eq_clean_data() %>%
 dplyr::filter(COUNTRY == "USA" & lubridate::year(DATE) >= 2000)
 
 ggplot(data = sample_USA, aes(x=DATE)) + geom_timeline() +
-geom_timeline_label(data=sample_USA,aes(label=LOCATION_NAME),n_max=5) + theme_classic()
+geom_timeline_label(data=sample_USA,aes(label=LOCATION_NAME),n_max=8) + theme_classic()
 
 ggplot() +
 geom_timeline_label(data=sample_USA,aes(x=DATE,label=LOCATION_NAME))
