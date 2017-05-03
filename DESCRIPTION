@@ -14,7 +14,7 @@ Imports:
     lubridate,
     ggplot2,
     leaflet
-License: GPL (>= 2)
+License: GPL-3 | file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
